@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap');
+    </style>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "HSUHFyuI2ZOpQYUCq",
+            });
+        })();
+    </script>
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+</head>
+
+<body>
+
+    <div class="nav">
+
+        <div class="nav_logo">IKBAL HUSSAIN</div>
+        <div class="nav_menu">
+            <ul>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#skills">Skills</a></li>
+                <li> <a href="#timeline">TimeLine</a></li>
+                <li> <a href="#projects">Project</a></li>
+                <li> <a href="#certificate">Certificates</a></li>
+                <li> <a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="main_ham_menu">
+        <div class="ham_nav">
+
+            <div class="ham_nav_logo">IKBAL HUSSAIN</div>
+
+
+
+            <div class="ham_nav_lines" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="menu_links">
+
+
+            <li> <a href="#about" onclick="toggleMenu()">About</a></li>
+            <li> <a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li> <a href="#timeline" onclick="toggleMenu()">TimeLine</a></li>
+            <li> <a href="#projects" onclick="toggleMenu()">Project</a></li>
+            <li> <a href="#certificate" onclick="toggleMenu()">Certificates</a></li>
+            <li> <a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+
+    </div>
+
+    <section id="about">
+
+        <div id="myimg">
+
+            <img src="assets/profile.jpg" alt="Image" srcset="" class="imgP">
+
+        </div>
+
+
+        <div class="profileInfo">
+
+            <div class="nameProfile">
+
+                <p>Hello, I'm </p>
+                <h2>Ikbal Hussain</h3>
+                    <h4>Senior at Wayne State University</h4>
+
+            </div>
+
+            <div class="nameButton">
+
+                <button onclick="window.open('./assets/resumeA.pdf')" class="rBtn">Resume</button>
+                <button onclick="location.href = '#contact'" class="cBtn">Contact</button>
+            </div>
+
+            <div class="socialLink">
+                <img src="assets/linkedIn.png" alt="linkedIn" srcset="" class="linkedin"
+                    onclick="location.href='https://www.linkedin.com/in/mdikbalhussain'">
+                <img src="assets/gitHub.png" alt="gitHub" srcset="" class="gitHub"
+                    onclick="location.href='https://github.com/ikbalhussa1n'">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- <div class="bg"></div> -->
+
+    <!-- skills section -->
+
+    <section id="skills">
+
+        <div class="skillText">
+            <h1>SKILLS</h1>
+            <h3>Below are some of my skills, and I'm always looking to learn more.</h3>
+
+        </div>
+        <div class="langguagesIcon">
+
+            <div class="firstLang">
+                <img src="assets/c-.png" alt="Image" srcset="" class="c">
+                <img src="assets/python.png" alt="Image" srcset="" class="p">
+                <img src="assets/js.png" alt="Image" srcset="" class="js">
+                <img src="assets/html-5.png" alt="Image" srcset="" class="html">
+
+
+            </div>
+
+            <div class="secondLan">
+                <img src="assets/mysql.png" alt="Image" srcset="" class="mysql">
+                <img src="assets/java.png" alt="Image" srcset="" class="java">
+                <img src="assets/css.png" alt="Image" srcset="" class="css">
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="timeline">
+
+        <div class="titleTimeline">
+            <h1>TimeLine</h1>
+        </div>
+        <div class="timeline">
+
+            <div class="timeline-empty">
+            </div>
+
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+                <h3>Front Desk Assistant</h3>
+                <p>Wayne State University</p>
+            </div>
+            <div class="timeline-component timeline-content">
+                <h3>Engineering Summer Camp Instructor</h3>
+                <p>Wayne State University</p>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty">
+            </div>
+
+            <div class="timeline-empty">
+            </div>
+
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class=" timeline-component timeline-content">
+                <h3>IT Support Student Assistant</h3>
+                <p>Wayne State University</p>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <div class="proText">
+            <h1 class="proTittle">Projects</h1>
+            <p>I'm working on new Projects.</p>
+        </div>
+
+        <div class="proImage">
+
+            <div class="firstImage">
+                <div class="firstpro">
+
+                    <img src="assets/portfolio.png" alt="" srcset="" class="pro1">
+                    <h4 onclick="location.href='https://ikbalhussain.com/'">Portfoilio Website</h4>
+                </div>
+
+                <div class="firstSecPro">
+
+                    <img src="assets/loginReg.png" alt="" srcset="" class="pro2">
+                    <h4 onclick="location.href='https://github.com/ikbalhussa1n/Login-and-Registration-System-in-Cpp'">
+                        Login and Registration in C++</h4>
+                </div>
+
+
+            </div>
+            <div class="secondImage">
+
+                <div class="secPro1">
+
+                    <img src="assets/qrCodegen.png" alt="" srcset="" class="pro3">
+                    <h4 onclick="location.href='https://github.com/ikbalhussa1n/QRCode-Generator'">Qr Code Generator
+                    </h4>
+                </div>
+
+                <div class="secPro2">
+
+                    <img src="assets/rockPaperScissor.jpg" alt="" srcset="" class="pro4">
+                    <h4 onclick="location.href='https://github.com/ikbalhussa1n/RockPaperScissor-in-python'">Rock Paper
+                        Scissor</h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="certificate">
+
+        <div class="certTittle">
+            <h1>Certificates</h1>
+        </div>
+        <div class="certImage1">
+
+            <img src="assets/CompTIA_A.png" alt="" srcset="" class="x">
+            <img src="assets/CompTIA_Network.png" alt="" srcset="" class="x">
+            <img src="assets/CompTIA_Specialist_-_CIOS.png" alt="" srcset="" class="x">
+        </div>
+
+        <div class="certImage2">
+
+            <img src="assets/cloudpra.png" alt="" srcset="" class="y">
+            <img src="assets/cloud Sol.png" alt="" srcset="" class="z">
+        </div>
+    </section>
+
+
+    <section id="contact">
+
+        <h1>Contact</h1>
+
+        <div class="xTitle">
+            <h4>Get In Touch.</h4>
+        </div>
+        <div class="contMaterials">
+            <div class="firstIcon">
+                <img src="assets/email.png" alt="" srcset="" class="emailx">
+                <p><a href="mailto:ikbal.huss1550@gmail.com">ikbal.huss1550@gmail.com</a></p>
+            </div>
+            <div class="secondIcon">
+                <img src="assets/linkedin-124-512.png" alt="linkedIn" srcset="" class="linkd">
+                <p class="lkdn" onclick="location.href='https://www.linkedin.com/in/mdikbalhussain'">Linkedin</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="footer">
+
+        <p>Copyright &#169; 2024 Ikbal Hussain. All Rights Reserved.</p>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
